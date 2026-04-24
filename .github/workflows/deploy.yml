@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
+  contents: write   # needed to push to gh-pages branch
+  pages: write      # needed for Pages API (optional but safe)
   id-token: write
 
 jobs:
